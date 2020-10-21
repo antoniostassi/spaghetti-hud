@@ -10,3 +10,4 @@ I hope you enjoy it, Malik
 
 DEPENDENCIES: 
 
+<a href="https://github.com/MalikTM/spaghetti-metabolism/tree/main">spaghetti-metabolism</a>
