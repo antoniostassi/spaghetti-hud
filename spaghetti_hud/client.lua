@@ -11,7 +11,7 @@ end)
 RegisterNetEvent("gui:getStress") --[[ QUESTA FUNZIONE SPOSTA LA VARIABILE DELLO STRESS DAL LATO SERVER AL LATO CLIENT ]]
 AddEventHandler("gui:getStress", function(stress)
     mystress = stress
-    print("Questo è il tuo stress:"..mystress)
+   -- print("Questo è il tuo stress:"..mystress)
 end) 
 
 RegisterNetEvent("gui:setstress") --[[ QUESTA FUNZIONE REGISTRA SU UNA VARIABILE SERVER LO STRESS DEL GIOCATORE ]]
@@ -25,7 +25,7 @@ Citizen.CreateThread(function() --[[ QUESTO THREAD CARICA AL LOGIN LO STRESS DEL
     print("Triggero il lato Server")
 end)
 
---[[Citizen.CreateThread(function() --[[ QUESTO THREAD DIMINUISCE LO STRESS DEL GIOCATORE OGNI 30 SECONDI DI 3. ]]
+--[[Citizen.CreateThread(function() -- QUESTO THREAD DIMINUISCE LO STRESS DEL GIOCATORE OGNI 30 SECONDI DI 3. 
 while true do 
     Wait(30000)
     --TriggerServerEvent("AbbassaStress", mystress)
@@ -51,7 +51,7 @@ Citizen.CreateThread(function()
                 show = not IsRadarHidden(),
                 hunger = myhunger,
                 thirst = mythirst,
-                stress = mystress,
+               -- stress = mystress,
                 --cash = money,
                 --temp = math.floor(temp * 1.8 + 32.0).."°",
 				temp= math.floor(temp).."°C",
