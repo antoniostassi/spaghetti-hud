@@ -75,4 +75,4 @@ RegisterCommand("malikomistressa", function()
 end)
 
 
--- TriggerEvent("StressaPlayer", 100)  -- AGGIUNGE X STRESS 
+-- TriggerEvent("StressaPlayer", 100)  -- AGGIUNGE X STRESS  
